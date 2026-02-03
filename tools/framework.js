@@ -25,6 +25,15 @@ class AppInfo {
         this.links = links;
     }
 }
+class ExtentionInfo {
+    constructor(name, creator, desc, link, demoLink ){
+        this.name = name;
+        this.creator = creator;
+        this.desc = desc;
+        this.link = link;
+        this.demoLink = demoLink
+    }
+}
 const make = {
     target: null,
     setTarget(i){
