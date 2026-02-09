@@ -1,3 +1,5 @@
+/*
+MD 1
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -57,4 +59,144 @@ button:active {
     box-shadow: 0 6px 10px rgba(0,0,0,.14),
                 0 1px 18px rgba(0,0,0,.12),
                 0 3px 5px rgba(0,0,0,.20);
+}
+*/
+
+/* Material Design 2*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --md-primary: #2196f3;
+    --md-primary-dark: #1976d2;
+    --md-primary-variant: #1e88e5;
+    --md-on-primary: #ffffff;
+
+    --md-surface: #ffffff;
+    --md-background: #fafafa;
+    --md-on-surface: #212121;
+
+    --md-focus-ring: rgba(33, 150, 243, 0.32);
+    --md-disabled: rgba(0, 0, 0, 0.38);
+    --md-disabled-bg: rgba(0, 0, 0, 0.12);
+
+    --md-elev-1: 0 1px 3px rgba(0, 0, 0, 0.12),
+                 0 1px 2px rgba(0, 0, 0, 0.24);
+    --md-elev-2: 0 3px 6px rgba(0, 0, 0, 0.16),
+                 0 3px 6px rgba(0, 0, 0, 0.23);
+    --md-elev-3: 0 10px 20px rgba(0, 0, 0, 0.19),
+                 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+body {
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    color: var(--md-on-surface);
+    background: var(--md-background);
+    margin: 0;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 0.18px;
+}
+
+h2,
+h3 {
+    font-weight: 400;
+    color: #757575;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+
+    color: var(--md-on-primary);
+    background-color: var(--md-primary);
+
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    min-width: 88px;
+
+    box-shadow: var(--md-elev-1);
+    transition:
+        background-color 0.15s ease-out,
+        box-shadow 0.15s ease-out,
+        transform 0.1s ease-out,
+        opacity 0.15s ease-out;
+}
+
+button:hover {
+    background-color: var(--md-primary-variant);
+    box-shadow: var(--md-elev-2);
+}
+
+button:active {
+    background-color: var(--md-primary-dark);
+    box-shadow: var(--md-elev-1);
+    transform: translateY(1px);
+}
+
+button:focus-visible {
+    outline: none;
+    box-shadow:
+        0 0 0 3px var(--md-focus-ring),
+        var(--md-elev-2);
+}
+
+button:disabled,
+button[disabled] {
+    cursor: default;
+    pointer-events: none;
+    background-color: var(--md-disabled-bg);
+    color: var(--md-disabled);
+    box-shadow: none;
+}
+
+button.text-button {
+    background-color: transparent;
+    color: var(--md-primary);
+    box-shadow: none;
+    padding: 8px 12px;
+    min-width: auto;
+}
+
+button.text-button:hover {
+    background-color: rgba(33, 150, 243, 0.08);
+    box-shadow: none;
+}
+
+button.text-button:active {
+    background-color: rgba(33, 150, 243, 0.16);
+}
+
+button.outlined-button {
+    background-color: transparent;
+    color: var(--md-primary);
+    border-radius: 4px;
+    border: 1px solid rgba(33, 150, 243, 0.5);
+    box-shadow: none;
+    padding: 9px 23px;
+}
+
+button.outlined-button:hover {
+    background-color: rgba(33, 150, 243, 0.04);
+}
+
+button.outlined-button:active {
+    background-color: rgba(33, 150, 243, 0.12);
 }
