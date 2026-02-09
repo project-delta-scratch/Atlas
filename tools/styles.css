@@ -1,5 +1,5 @@
 /*
-MD 1
+Material Design 1
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -61,8 +61,73 @@ button:active {
                 0 3px 5px rgba(0,0,0,.20);
 }
 */
+/*
+Material Design 1 (green)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Material Design 2*/
+body {
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 300;
+    color: #212121;
+    background: #fafafa;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0;
+}
+
+h2, h3 {
+    font-weight: 400;
+    color: #757575;
+    margin-top: 4px;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #2196f3;
+
+    border: none;
+    border-radius:44px;
+    padding: 8px 16px;
+    min-width: 64px;
+
+    box-shadow: 0 2px 2px rgba(0,0,0,.14),
+                0 1px 5px rgba(0,0,0,.12),
+                0 3px 1px rgba(0,0,0,.20);
+
+    transition:
+        background-color 0s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #1e88e5;
+    box-shadow: 0 4px 5px rgba(0,0,0,.14),
+                0 1px 10px rgba(0,0,0,.12),
+                0 2px 4px rgba(0,0,0,.20);
+}
+
+button:active {
+    background-color: #1976d2;
+    box-shadow: 0 6px 10px rgba(0,0,0,.14),
+                0 1px 18px rgba(0,0,0,.12),
+                0 3px 5px rgba(0,0,0,.20);
+}
+
+/* 
+
+Material Design 2
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -200,3 +265,4 @@ button.outlined-button:hover {
 button.outlined-button:active {
     background-color: rgba(33, 150, 243, 0.12);
 }
+*/
