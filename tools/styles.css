@@ -62,7 +62,7 @@ button:active {
 }
 */
 /*
-Material Design 1 (green)
+Material Design 2 (green)
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -95,7 +95,7 @@ button {
     text-transform: uppercase;
 
     color: #fff;
-    background-color: #2196f3;
+    background-color: #21F39F;
 
     border: none;
     border-radius:44px;
@@ -112,14 +112,14 @@ button {
 }
 
 button:hover {
-    background-color: #1e88e5;
+    background-color: #1EE585;
     box-shadow: 0 4px 5px rgba(0,0,0,.14),
                 0 1px 10px rgba(0,0,0,.12),
                 0 2px 4px rgba(0,0,0,.20);
 }
 
 button:active {
-    background-color: #1976d2;
+    background-color: #19D28B;
     box-shadow: 0 6px 10px rgba(0,0,0,.14),
                 0 1px 18px rgba(0,0,0,.12),
                 0 3px 5px rgba(0,0,0,.20);
@@ -127,7 +127,7 @@ button:active {
 
 /* 
 
-Material Design 2
+Material Design 2 (by chatgpt)
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
