@@ -26,12 +26,13 @@ class AppInfo {
     }
 }
 class ExtentionInfo {
-    constructor(name, creator, desc, link, demoLink ){
+    constructor(name, creator, desc, link, demoLink, isUnsandboxed ){
         this.name = name;
         this.creator = creator;
         this.desc = desc;
         this.link = link;
-        this.demoLink = demoLink
+        this.demoLink = demoLink;
+        this.isUnsandboxed = isUnsandboxed;
     }
 }
 const make = {
